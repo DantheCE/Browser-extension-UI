@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Browser Extensions Manager</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Component -->
+    <header class="header">
+      <div class="header__brand">
+        <img src="./assets/images/logo.svg" alt="Extensions logo" class="header__icon">
+        <h1 class="header__title">Extensions</h1>
+      </div>
+      <button class="header__theme-toggle" aria-label="Toggle theme">
+        <img src="./assets/images/icon-sun.svg" alt="" class="header__theme-icon">
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Filter Section -->
+      <section class="filters">
+        <h2 class="filters__title">Extensions List</h2>
+        <div class="filters__group">
+          <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="inactive">Inactive</button>
+        </div>
+      </section>
+
+      <!-- Extensions Grid (populated by JavaScript) -->
+      <div id="extensionContainer" class="extensions-grid"></div>
+    </main>
+
+    <!-- Attribution -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+        Mentor</a>.
+      Coded by <a href="https://github.com/">DantheCE</a>.
+    </footer>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
