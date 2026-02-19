@@ -27,8 +27,9 @@ function renderExtensions(extensions) {
         return
     }
 
-    filtered.forEach((extension, index) => {
-        const card = createExtensionCard(extension, index)
+    filtered.forEach((extension) => {
+        const originalIndex = extensionsData.indexOf(extension)
+        const card = createExtensionCard(extension, originalIndex)
         extensionContainer.appendChild(card)
     })
 }
